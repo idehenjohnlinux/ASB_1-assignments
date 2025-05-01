@@ -1,0 +1,37 @@
+# getting the accession number for each gene 
+
+# creating a module for our script 
+# module from BioPython 
+from Bio import Entrez
+
+# Setting email  as required by NCBI
+Entrez.email = "202300115@estudantes.ips.pt"
+
+# creating a list  of CB1 accession numbers gotten from an article 
+accessions = [
+    "BC070447", "U40395", "FM162115", "FM162116", "FM162117", "AY303191", "FM162118",
+    "FM162119", "FM162120", "AY303184", "FM162121", "FM162122", "AY303196", "FM162123",
+    "FM162124", "FM162125", "AY303185", "FM162126", "FM162127", "AY303179", "AY303180",
+    "FM162128", "AY303189", "FM162129", "FM162130"
+]
+
+
+
+# write fasta file 
+with open("CB1_sequences.fasta", "w") as output_handle:  # open the file for writing
+    for acc in accessions:
+        # using entrez.efetch for finding the genes 
+        handle = Entrez.efetch(db="nucleotide", id=acc, rettype="fasta", retmode="text")
+        output_handle.write(handle.read())
+
+
+
+
+
+
+
+
+
+
+
+
