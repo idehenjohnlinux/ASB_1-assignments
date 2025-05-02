@@ -44,6 +44,10 @@ based on our research and the tasks giving to make our reseach successful we fol
   - filtration
   - Mrbayes
 
+  # Mafft commands
+  mafft vWF_seq.fasta > vWF_align.fasta
+  
+
   # CREDITS
   - code and Repository: Louis john Andrew idehen > 202300115
   - commands and code: Sara Sampaio > 202200639
