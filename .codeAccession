@@ -1,4 +1,6 @@
 # getting the accession number for each gene 
+# note: the accession number might not be a valid accession number but the code are a valid way to extract accession number 
+
 
 # creating a module for our script 
 # module from BioPython 
