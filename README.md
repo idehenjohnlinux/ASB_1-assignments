@@ -46,8 +46,12 @@ based on our research and the tasks giving to make our reseach successful we fol
   - Mrbayes    "v3.2.7a"  	  Ronquist et al., 2012
 
   # Mafft commands
-  mafft vWF_seq.fasta > vWF_align.fasta   # AN example
-  
+mafft vWF_sequences.fasta > vWF_aline.fasta
+mafft IRBP_sequences.fasta > IRBP_aline.fasta
+mafft ADRA2B_sequences.fasta > ADRA2B_aline.fasta
+mafft GHR_sequences.fasta > GHR_aline.fasta
+mafft RAG2_sequences.fasta > RAG2_aline.fasta
+mafft CB1_sequences.fasta > CB1_aline.fasta
 
   # CREDITS
   - code and Repository: Louis john Andrew idehen > 202300115
