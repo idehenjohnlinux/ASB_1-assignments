@@ -1,7 +1,8 @@
 # ASB_1-assignments
 This repository contains the code, data, and detailed steps for reproducing the rodent phylogeny analysis as performed in the selected research paper. The objective of this project is to reproduce the original phylogenetic tree construction using molecular data from rodent species, following the methods outlined in the referenced study. 
 # Brief description
-This script works with the combine effort of all teams and also with the use of our individual knowledge to understand, analyse and observe the phylogetic relationships among Rodents.We made our observation from a giving article which is " Rodent phylogeny revised: analysis of six nuclear genes from all major rodent clades Shani Blanga-Kanfi1, Hector Miranda2,4, Osnat Penn3, TalPupko3, Ronald W DeBry2 and Dorothée Huchon*1  by Shani Blanga-Kanfi et al ". This article provides the necessary procedure to determine and advance on our reseach. It contains 6 nuclear genes, accession number of all gene and also a perfect analysis on our research which involues phylogenetics. The genes used where adra2b.gene,CB1.gene,vWF.gene,GHR.gene,RAG2.gene,IRBP.gene.the genes where concatenated to bring out a single analytical gene,which means all 6 genes was placed into a single gene. In other to get a phylogenetic tree we followed some software commands/principles like Maftt, filtration of sequences ,Python,concatenation of gene, Biopython ,MEGA(Molecular Evolutionary Genetics Analysis),Mrbayes.The purpose of these commands is to align genes of arranging sequences of DNA, RNA, or proteins to identify regions of similarity that may be a consequence of functional, structural, or evolutionary relationships between the sequences but in this case we used DNA and also we used python script which  automatically retrieve nucleotide sequences for specific nuclear genes from GenBank using their unique accession numbers. These accession numbers were collected from the article and stored in NCBI (National Center for Biotechnology Information) for extraction and verification. These sequences are intended for use in the phylogenetic analysis of rodent species. we used software MEGA to convert Fasta to Nexus, which we did to get Bayesian interference analyses(which determines the statistical inferences in which the statistician assigns subjective probabilities to the distributions that could generate the data. These subjective probabilities form the so-called prior distribution.) Biopython Library: Used to handle sequence data retrieval from GenBank. Data Input: A list of GenBank accession numbers corresponding to the genes studied) and Output Format: FASTA format (standard format for storing nucleotide sequences).
+This script works with the combine effort of all teams and also with the use of our individual knowledge to understand, analyse and observe the phylogetic relationships among Rodents.We made our observation from a given article which is " Rodent phylogeny revised: analysis of six nuclear genes from all major rodent clades Shani Blanga-Kanfi1, Hector Miranda2,4, Osnat Penn3, TalPupko3, Ronald W DeBry2 and Dorothée Huchon*1  by Shani Blanga-Kanfi et al ". This article provides the necessary procedure to determine and advance on our reseach. It contains 6 nuclear genes, accession number of all gene and also a perfect analysis on our research which involues phylogenetics. The genes used where 
+adra2b.gene,CB1.gene,vWF.gene,GHR.gene,RAG2.gene,IRBP.gene.the genes where concatenated to bring out a  concatenating gene alignments,which means all 6 genes was placed into a single gene alignments. In other to get a phylogenetic tree we followed some software commands/methods like Maftt, filtration of sequences ,Python,concatenation of gene, Biopython ,MEGA(Molecular Evolutionary Genetics Analysis),Mrbayes.The purpose of these commands is to align genes of arranging sequences of DNA, RNA, or proteins to identify regions of similarity that may be a consequence of functional, structural, or evolutionary relationships between the sequences but in this case we used DNA and also we used python script which  automatically retrieve nucleotide sequences for specific nuclear genes from GenBank using their unique accession numbers. These accession numbers were collected from the article and stored in NCBI (National Center for Biotechnology Information) for extraction and verification. These sequences are intended for use in the phylogenetic analysis of rodent species. we used software MEGA to convert Fasta to Nexus, which we did to get Bayesian interference analyses(which determines the statistical inferences in which the statistician assigns subjective probabilities to the distributions that could generate the data. These subjective probabilities form the so-called prior distribution.) Biopython Library: Used to handle sequence data retrieval from GenBank. Data Input: A list of GenBank accession numbers corresponding to the genes studied) and Output Format: FASTA format (standard format for storing nucleotide sequences).
 
 # Installation instructions
 MRbayes
@@ -36,16 +37,16 @@ based on our research and the tasks giving to make our reseach successful we fol
    assigns subjective probabilities to the distributions that could generate the data. These subjective probabilities form the so-called prior distribution.)
 - Compare results with the original paper.
 
-  #  SOFTWARE AND COMMANDS
-  - Maftt
-  - PYTHON 
-  - BIOPYTHON
-  - MEGA
-  - filtration
-  - Mrbayes
+  #  SOFTWARE AND COMMANDS(version and citations )
+  - Maftt     v7.520 	    Katoh & Standley, 2013
+  - PYTHON     3.10        Van Rossum, 2009
+  - BIOPYTHON   v1.83      Cock et al., 2009
+  - MEGA       v11.0.13      Kumar et al., 2018
+  - filtration (python)
+  - Mrbayes    "v3.2.7a"  	  Ronquist et al., 2012
 
   # Mafft commands
-  mafft vWF_seq.fasta > vWF_align.fasta
+  mafft vWF_seq.fasta > vWF_align.fasta   # AN example
   
 
   # CREDITS
@@ -53,6 +54,17 @@ based on our research and the tasks giving to make our reseach successful we fol
   - commands and code: Sara Sampaio > 202200639
   - Commands and Organisation: Maria eduarda > 202200600
   - Data and Testing: Fabio leonor> 202200269
+ 
+  # Citation
+Blanga-Kanfi, S., Miranda, H., Penn, O., Pupko, T., DeBry, RW, & Huchon, D. (2009). Rodent phylogeny revised: Analysis of six nuclear genes from all major rodent clades. BMC Evolutionary Biology , 9, 71. https://doi.org/10.1186/1471-2148-9-71
+
+Katoh, K., & Standley, D.M. (2013). MAFFT multiple sequence alignment software version 7: Improvements in performance and usability. Molecular Biology and Evolution , 30(4), 772–780. https://doi.org/10.1093/molbev/mst010
+
+Wikipédia. (s.d.). MAFFT. Wikipédia, a enciclopédia livre. Acedido em 1 de maio de 2025, de https://pt.wikipedia.org/wiki/MAFFT
+
+EurekaMag. (s.d.). Molecular phylogeny of Rodentia using complete mitochondrial genomes for the major rodent families. Acedido em 1 de maio de 2025, de https://eurekamag.com/research/080/379/080379201.php
+
+Wikipédia. (s.d.). MEGA, Molecular Evolutionary Genetics Analysis. Wikipédia, a enciclopédia livre. Acedido em 1 de maio de 2025, de https://pt.wikipedia.org/wiki/MEGA,_Molecular_Evolutionary_Genetics_Analysis
 
 
   
