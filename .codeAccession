@@ -1,6 +1,6 @@
 # getting the accession number for each gene 
 # note: the accession number might not be a valid accession number but the code are a valid way to extract accession number 
-
+# you can use these code to extract any accession number of your choice 
 
 # creating a module for our script 
 # module from BioPython 
@@ -11,10 +11,14 @@ Entrez.email = "202300115@estudantes.ips.pt"
 
 # creating a list  of CB1 accession numbers gotten from an article 
 accessions = [
-    "BC070447", "U40395", "FM162115", "FM162116", "FM162117", "AY303191", "FM162118",
-    "FM162119", "FM162120", "AY303184", "FM162121", "FM162122", "AY303196", "FM162123",
-    "FM162124", "FM162125", "AY303185", "FM162126", "FM162127", "AY303179", "AY303180",
-    "FM162128", "AY303189", "FM162129", "FM162130"
+   "BC070447", "U40395", "FM162115", "FM162116", "FM162117", "AY303191",
+    "FM162118", "FM162119", "FM162120", "AY303184", "FM162121", "FM162122",
+    "AY303196", "FM162123", "FM162124", "AY303185", "FM162126", "FM162127",
+    "AY303179", "AY303180", "FM162128", "AY303189", "FM162129", "FM162130",
+    "FM162131", "FM162132", "FM162133", "FM162134", "FM162135", "FM162136",
+    "AY303182", "FM162137", "FM162138", "FM162139", "FM162140", "FM162141",
+    "DQ355990", "FM162142", "FM162143", "AY303186", "U73304", "NM001032825",
+    "AY011595", "FM162145", "FM162146"
 ]
 
 
