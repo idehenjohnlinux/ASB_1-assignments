@@ -1,0 +1,19 @@
+# create a function and arguments  
+# these arguments are stored/sent to the function 
+def simplify(ficheiro_entrada, ficheiro_saida):
+# reading fasta file  and also writing fasta file 
+    with open(ficheiro_entrada, 'r') as f_in, open(ficheiro_saida, 'w') as f_out:
+              # create a for loop to interate over each line
+        for linha in f_in:
+               # verify if the line starts with >
+            if linha.startswith('>'):
+               # remove space  and split line into partes
+                partes = linha.strip().split()
+                 # calculating for the length of the variable partes and if there are at least 3 parts to extract species name
+                if len(partes) >= 3:
+                    especie = partes[1] + "_"+ partes[2]
+                    f_out.write(f'>{especie}\n')
+                else:
+                    f_out.write(linha)  # if the line does not have the expected format
+            else:
+                f_out.write(linha)
